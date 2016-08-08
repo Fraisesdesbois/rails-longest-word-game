@@ -1,0 +1,10 @@
+<h1>Bienvenue à des chiffres et des lettres</h1>
+
+<h2><%= @grid.join(" - ")%></h2>
+
+<form action="/score">
+  <input type="text" placeholder="guess the longuest word" name="attempt">
+  <input type="hidden" name="grid" value="<%=@grid.join("")%>">
+  <input type="hidden" name="start" value="<%=@start%>">
+  <input type="submit" value="Go, time's runnning">
+</form>
